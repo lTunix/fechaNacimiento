@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fnac</title>
+</head>
+<body>
+    <div class="box-select birth">
+        <label>Fecha de nacimiento:</label>
+        <ul class="box-birth">
+            <li>
+                <select onchange="anoBisiesto()" id="day" name="day">
+                    <option>Día</option>
+                </select>
+            </li>
+            <li>
+                <select onchange="anoBisiesto()" id="month" name="month">
+                    <option>Mes</option>
+                </select>
+            </li>
+            <li>
+                <select onchange="anoBisiesto()" id="year" name="year">
+                    <option>Año</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scriptFnac.js"></script>
+</html>
